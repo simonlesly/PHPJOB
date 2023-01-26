@@ -51,7 +51,10 @@ class Personne {
 
 	//Méthodes
 	private function afficher() {
-
+		$this->num . '<br/>';
+		$this->nom . '<br/>';
+		$this->prenom . '<br/>';
+		$this->entreprise->nom . '<br/>';
 	}
 
 	public calculerSalaire() {
