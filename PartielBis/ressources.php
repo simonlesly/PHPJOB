@@ -79,28 +79,3 @@ function afficher() {
 } //Fin classe Developpeur
 
 
-//Définition de la classe Manager
-
-class Manager extends Personne {
-	
-//Attributs
-	const taux = 0.11;
-	private $service;
-
-//Constructeur
-
-function __construct($id, $nom, $prenom, $mail, $tel, $salaire, $service) {
-
-	parent::__construct($id, $nom, $prenom, $mail, $tel, $salaire);
-	
-	$this->service = $service;
-}
-
-function calculerSalaire() {
-	return $this->salaire * (1 + taux);
-}
-
-function afficher() {
-	echo parent::afficher()."<br/>".$this->service;
-} 
-}
